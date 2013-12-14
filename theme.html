@@ -21,6 +21,15 @@
     <meta name="select:Avatar style" content="visible" title="Visible">
     <meta name="select:Avatar style" content="hidden" title="Hidden">
 
+    <!-- Colors & custom stuff -->
+    <meta name="Title color" content="#333">
+    <meta name="Link color" content="#427fed">
+    <meta name="color:Background" content="#ede9e9">
+    <meta name="color:Sidebar" content="#fff">
+    <meta name="color:Nav BG" content="#fff">
+    <meta name="color:Nav Border" content="#d8d8d8">
+    <meta name="color:Nav Text" content="#3f3f3f">
+
     <meta name="text:Disqus shortname" content="">
     <meta name="text:Google analytics ID" content="">
 
@@ -34,7 +43,7 @@
     <link rel="stylesheet" href="http://static.tumblr.com/ty4kn30/Podmxr0lh/normalize-me.css">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,300,700">
-    <link rel="stylesheet" href="http://www.mwanoz.fr/tumblr/tumblr-starter/style.css">
+    <link rel="stylesheet" href="http://www.mwanoz.fr/tumblr/minimal-ui/style.css">
 
     <!-- HTML5 Shiv -->
     <!--[if lt IE 9]>
@@ -46,10 +55,21 @@
     <meta property="og:description" content="{Description}">
     <meta property="og:type" content="blog">
     <meta property="og:url" content="{BlogURL}">
-    <!-- TODO: add screenshot.png 250*250px for Facebook -->
+    <!-- Add your own screenshot.png (min 200*200px) for Facebook -->
     <meta property="og:image" content="http://i.imgur.com/rV9EmIM.png">
 
     <style>
+    body {background-color: {color:Background};}
+    h1.blog-title a {color: {TitleColor};}
+    #sidebar {background-color: {color:Sidebar};}
+    a {color: {LinkColor};}
+
+    .nav-list li a {
+        background-color: {color:Nav BG};
+        border: 1px solid {color:Nav Border};
+        color: {color:Nav Text};
+    }
+
     /* Your own custom badass CSS */
     {CustomCSS}
     </style>
