@@ -1,0 +1,396 @@
+/* ***************************************************
+ * Theme name: Minimal UI
+ * Version: 1.0
+ * -------------------------
+ * Author: Manoz
+ * Twitter: @Manoz
+ * Email: manoz@outlook.com
+ * Github: https://github.com/Manoz/Tumblr-minimal-ui
+*************************************************** */
+
+/* =Structure
+-------------------------------------------------------------------- */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans',sans-serif;
+    color: #333;
+    background-color: #ede9e9;
+}
+
+#layout {
+    position: relative;
+    padding-left: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: #427fed;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+a:hover {
+    color: #385fa7;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+/* =Sidebar + Header stuff
+-------------------------------------------------------------------- */
+
+/* Sidebar
+---------------------------*/
+#sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+    margin-left: -25%;
+    border-right: 2px solid #d8d8d8;
+    color: #fff;
+    background-color: #fff;
+}
+
+/* Header
+---------------------------*/
+.main-header {
+    margin: 30% 2em 0;
+    text-align: right;
+}
+
+.main-header figure {
+    margin-bottom: 10px;
+}
+
+.main-header figure img {
+    border: 2px solid #d9d9d9;
+    border: 2px solid rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+figure.avatar-hidden {
+    display: none;
+}
+
+h1.blog-title,
+h2.baseline {
+    margin: 0;
+}
+
+h1.blog-title {
+    text-transform: uppercase;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+h2.baseline {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    color: #427fed;
+    cursor: default;
+}
+
+h1.blog-title a {
+    color: #333;
+}
+
+h1.blog-title a:hover {
+    color: #868686;
+}
+
+/* Navigation
+---------------------------*/
+.side-nav {
+    margin: 10px 0;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-list li {
+    margin: 16px 0;
+}
+
+.nav-list li a {
+    margin-top: 1em;
+    padding: 5px;
+    border: 1px solid #d9d9d9;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 2px;
+    color: #333;
+    background: transparent;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.05);
+    box-shadow: 0 1px 0 rgba(0,0,0,.05);
+}
+
+.nav-list li a:hover,
+.nav-list li a:focus {
+    border: 1px solid #b8b8b8;
+    color: #404040;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 0 rgba(0,0,0,.1);
+}
+
+/* =Content stuff
+-------------------------------------------------------------------- */
+
+.content {
+    padding: 2em 3em 0;
+}
+
+.content article {
+    margin-bottom: 2em;
+    border: 1px solid #d8d8d8;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.05);
+    box-shadow: 0 1px 0 rgba(0,0,0,.05);
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.content article:hover {
+    border: 1px solid #b8b8b8;
+    background-color: #fcfcfc;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 0 rgba(0,0,0,.1);
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.content article .post {
+    padding: 15px;
+}
+
+/* Post title
+---------------------------*/
+.post header h2 {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    font-size: 2em;
+    color: #222;
+}
+
+.post header h2 a {
+    color: #333;
+}
+
+.post header h2 a:hover {
+    color: #868686;
+}
+
+.post .text-content {
+    padding: 0 15px;
+}
+
+.text-content h2 {
+    font-size: 1.2em;
+    color: #5F5F5F;
+}
+
+/* Post footer
+---------------------------*/
+.posts-meta ul,
+.post-controls ul,
+ul.post-date {
+    margin-bottom: 0;
+    padding: 0 15px;
+    font-size: 13px;
+    list-style: none;
+}
+
+.posts-meta {
+    float: left;
+}
+
+.post-date {
+    float: right;
+}
+
+.posts-meta ul a {
+    margin-top: 1em;
+    padding: 5px;
+    border: 1px solid #d9d9d9;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 2px;
+    color: #bbb;
+    background: transparent;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.05);
+    box-shadow: 0 1px 0 rgba(0,0,0,.05);
+}
+
+.posts-meta ul a:hover,
+.posts-meta ul a:focus {
+    border: 1px solid #b8b8b8;
+    color: #404040;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 0 rgba(0,0,0,.1);
+}
+
+li.reblog a.reblog-link {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 0;
+    padding-left: 20px;
+    margin: 0;
+}
+
+a.tag:before {
+    content: '#';
+}
+
+.posts-meta ul li,
+ul.post-date li {
+    display: inline-block;
+    zoom: 1;
+    margin: 0 15px 10px 0;
+    vertical-align: top;
+    *display: inline;
+}
+
+.posts-footer footer {
+    margin-bottom: 10px;
+    border-top: 1px solid #d8d8d8;
+}
+
+.reblog-link {
+    position: relative;
+}
+
+.reblog-link:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: rgba(0,0,0,0) url(http://static.tumblr.com/vr9xgox/vZtmnberw/sprite-1x.png) 0 -160px no-repeat;
+}
+
+li.tags {
+    margin-right: 5px !important;
+}
+
+/* Share buttons
+---------------------------*/
+.share-buttons {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.share-buttons ul {
+    margin: 0;
+    padding: 0;
+}
+
+.share-buttons ul li {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: top;
+    list-style: none;
+    *display: inline;
+}
+
+.share-item:before {
+    content: '';
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    opacity: 0.7;
+    background: transparent url(http://static.tumblr.com/vr9xgox/vZtmnberw/sprite-1x.png) -160px 0 no-repeat;
+}
+
+.twitter:before {
+    background-position: -200px 0;
+}
+
+.facebook:before {
+    background-position: -240px 0;
+}
+
+.share-buttons ul li {
+    opacity: .35;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.share-buttons ul li:nth-child(-n+3) {
+    opacity: .55;
+}
+
+.share-buttons ul li:nth-child(-n+3) :hover {
+    opacity: 1;
+}
+
+.share-buttons ul li:hover {
+    opacity: .8;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+/* =Notes stuff
+-------------------------------------------------------------------- */
+
+a.avatar_frame {
+    margin-right: 5px;
+}
+
+/* =Misc
+-------------------------------------------------------------------- */
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* .clear classes are used by notes */
+
+div.clear,
+br.clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
